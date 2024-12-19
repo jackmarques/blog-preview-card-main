@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* Colors */
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+
+    /* Typography */
+    /* Body Copy */
+    --Font-size-paragraph: 16px;
+
+    /* Font */
+    --fonte01: "Figtree", serif;
+    --Weight1: 500;
+    --Weight2: 800;
+}
+body{
+    background-color: var(--Yellow);
+    height: 100vh;
+    font-family: var(--fonte01);
+}
+h1, h3{
+    font-weight: 800;
+}
+h1{
+    font-size: 28px;
+}
+h3{
+    background-color: var(--Yellow);
+    width: 30%;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 3px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.container-card{
+    background-color: var(--White);
+    width: 400px;
+    height: 530px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow:  10px 10px;
+    border: 1px solid black;
+}
+
+.img-inicio{
+    display: block; /* faz com que a linha vire uma só, apenas com um elemento. */
+    margin: 15px auto 12px;
+    border-radius: 15px;
+
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 18px;
+}
+.texto p{
+    font-weight: 500;
+}
+.texto .parag-1{
+    color: var(--Gray-950);
+}
+.texto .parag-2{
+    line-height: 1.5rem;
+    color: var(--Gray-500);
+}
+.avatar{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.img-avatar{
+    width: 30px;
+    margin-left: 16px;
+}
+.avatar p{
+    font-weight: 800;
+}
+.attribution{
+    margin-top: 50px;
+}
